@@ -10,7 +10,7 @@ export default function Bonus() {
       <h4>Bonus Component</h4>
       <h3>Bonus : {points}</h3>
       <h3>Amount : {amount}</h3>
-      <button onClick={() => dispatch(incrementBonus)}>Increment +</button>
+      <button onClick={() => dispatch(incrementBonus())}>Increment +</button>
     </div>
   );
 }

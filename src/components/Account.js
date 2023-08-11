@@ -13,8 +13,8 @@ export default function Account() {
       <h4>Account component</h4>
       <h3>Amount : {amount}</h3>
       <h3>Points : {points}</h3>
-      <button onClick={() => dispatch(increment)}>Increment +</button>
-      <button onClick={() => dispatch(decrement)}>Decrement -</button>
+      <button onClick={() => dispatch(increment())}>Increment +</button>
+      <button onClick={() => dispatch(decrement())}>Decrement -</button>
       <input type="text" onChange={(e) => setValue(+e.target.value)} />
       <button onClick={() => dispatch(incrementByAmount(value))}>
         Increment By {value}
